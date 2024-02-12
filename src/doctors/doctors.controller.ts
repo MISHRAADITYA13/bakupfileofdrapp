@@ -5,7 +5,7 @@ import { ApiOperation, ApiResponse, ApiCreatedResponse } from '@nestjs/swagger';
 import { DoctorPrfDto } from './dto/doctorPrf.dto';
 import { prescrSchema } from 'src/prescr/schemas/prescr.schema';
 import { GetCurrentUserId } from 'src/common/decorators';
-
+// import { ReviewController } from 'src/review/review.controller';
 @Controller('doctors')
 export class DoctorsController {
   constructor(private readonly doctorProfileService: DoctorsService) {}

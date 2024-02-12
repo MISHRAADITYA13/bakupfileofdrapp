@@ -10,6 +10,7 @@ import { MailerModule } from '@nestjs-modules/mailer';
 import { BillingModule } from './billing/billing.module';
 import { PrescrModule } from './prescr/prescr.module';
 import { NauthModule } from './nauth/nauth.module';
+import { ReviewModule } from './review/review.module';
 import { APP_GUARD } from '@nestjs/core';
 import { AtGuard } from './common/guards';
 import { ClinicModule } from './clinic/clinic.module';
@@ -22,9 +23,9 @@ import { SearchModule } from './specialization/search.module';
     envFilePath: '.env', 
       isGlobal: true,
   }),
-    MongooseModule.forRoot('mongodb+srv://shadowmonarch712:testuser@cluster0.mzexokf.mongodb.net/'),
-     AuthModule, PatientModule, DoctorsModule, PrescrModule,ClinicModule, AppointmentsModule, 
-     SearchModule,
+    MongooseModule.forRoot('mongodb+srv://mishraaditya165:4WJvXZ41PaLpuZzD@cluster0.rhiwvuo.mongodb.net/?retryWrites=true&w=majority'),
+     AuthModule, PatientModule, DoctorsModule, PrescrModule,ReviewModule,ClinicModule, AppointmentsModule, 
+    //  SearchModule,
      MailerModule.forRoot({
     transport: {
       host: 'smtp.gmail.com',
